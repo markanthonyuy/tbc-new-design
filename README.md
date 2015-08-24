@@ -1,6 +1,5 @@
-# tbc-new-design
 Treasurers Briefcase New Design
 
-Authors: Mark Anthony Uy and George Mitra
+Authors: George Mitra and Mark Anthony Uy 
 
 Clients: Treasurers Briefcase
