@@ -1,0 +1,13 @@
+.approval-box { margin-bottom:15px;
+  .transaction-row { border: 1px solid #b3cdeb !important; @include border-radius(5px);}
+}
+
+.transactions.approve div i {color:#3E4A58;}
+
+
+.approve-btn {margin-left: 8px; display: inline-block;
+font-size: .875rem; color:#5f748d;
+padding: 5px 0px 5px 10px; @include border-radius(3px);
+border:1px solid #809bbd;
+input {margin-bottom:0;}
+}

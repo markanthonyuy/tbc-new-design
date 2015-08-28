@@ -1,0 +1,45 @@
+.payprof, .contacts {list-style:none; margin:0;background: white;
+  li { border-bottom: 5px solid #ddd;
+    span {display:block;padding: 8px; border-bottom: 1px solid #EEE; 
+         i {color: #bbb;}
+    }
+   &:hover {background-color:#d0e6ff; 
+    span {border-color:#d0e6ff;}
+    i {color:#3E4A58;}
+    svg path {fill:#3E4A58;}
+  }
+    a {display:block; color:#3E4A58;
+      i {color: #bbb;}
+        span {display:block;padding: 8px; border-bottom: 1px solid #EEE; }
+    }
+  }
+}
+
+
+
+.contact-menu-wrap {position:relative;
+.contact-box {padding-left: 0;
+padding-right: 0;}
+}
+
+.bluehover {background:$tbblue !important;}
+
+.az {background:$tbblue; padding:8px; width: 295px; 
+   display:none;
+            position: absolute;
+            z-index: 99; top: 38px;
+            right: 0;
+            .arrow-up {position:absolute; top: -7px; right: 11px;}
+          a {color:$normalbutton;font-size: 1rem;
+background: $white;
+width: 35px;
+display: inline-block;
+height: 35px;
+text-align: center;
+line-height: 35px;
+margin: 2px 1px;
+
+&.numb {width: 75px;}
+
+}
+          }

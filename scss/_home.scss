@@ -1,0 +1,115 @@
+
+.contentbg {
+          background:#eee; margin-top:10px; padding:10px;
+          }
+
+
+
+
+
+//------- checks
+
+
+.checks { margin-bottom: 10px; color:$white; position:relative; height:77px;
+   @media #{$medium-up} { height:auto; }
+  header { 
+            @media #{$medium-up} { text-align:center; }
+          }
+
+
+  div {padding: 0 5px; display: inline-block;
+    div {padding:1px 0 0; position:relative; 
+       @media #{$medium-up} { text-align:right; height:60px; }
+       .big-amount { 
+                 @media #{$medium-up} { display:block; }
+       }
+      .addamount {position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                     @media #{$medium-up} { display:inline-block; position:relative; bottom:25px;}
+                  }
+
+                  .recdate {position: absolute;
+                    bottom: -17px;
+                    left: 0;
+                       @media #{$medium-up} {display: block; text-align:left;position:relative; bottom:0;}
+                  }
+                 }
+    &.amount {width:30%; font-size:.85rem;font-weight: 700;
+         @media #{$medium-up} { font-size: 1.8rem; width:100%; height:60px; padding-top:10px;}
+         }
+    &.recdes {width:55%; font-size: .85rem; text-align:center;
+    @media #{$medium-up} { width:100%; text-align:left; margin-top:-18px; padding-bottom:15px;
+      div {height:40px;}
+    }
+  }
+    &.arrws {width:29px; float:right;
+        @media #{$medium-up} {position: absolute;right: 0;height: 100%;top: 0;}
+    }
+    .states {font-size: 1.23rem;
+              position: absolute;
+              top: -51px; right: -26px;
+              i {font-size:1.5rem;}
+               @media #{$medium-up} {top: 100px;}
+            }
+    .up-arr {font-size: 1.8rem;
+position: absolute;
+top: -20px;
+right: -30px;
+@media #{$medium-up} {top: 30px;}
+}
+  }
+  &.green { header {padding: 3px 5px; text-transform:uppercase; background:$greenhead;}
+              background-color:$greenbg; 
+              .addamount {color:#15B948; font-size:9px; background:$white; @include border-radius(100px); padding:0 3px;}
+}
+
+&.red { header {padding: 3px 5px; text-transform:uppercase; background:$redhead;}
+              background-color:$redbg; 
+              .addamount {color:$redbg; font-size:9px; background:$white; @include border-radius(100px); padding:0 3px;}
+}
+
+&.blue { header {padding: 3px 5px; text-transform:uppercase; background:$bluehead;}
+              background-color:$bluebg; 
+              .addamount {color:$bluebg; font-size:9px; background:$white; @include border-radius(100px); padding:0 3px;}
+}
+
+
+}
+
+
+//------------- revenues
+
+
+.totalexp { background-color:#de5626; color:$white; padding:3px 5px;margin-bottom:10px; 
+              .amt {float:right; font-weight:700; display:block;}
+             
+}
+
+.totalrev { background-color:#4f9c10; color:$white; padding:3px 5px;margin-bottom:10px; 
+              .amt {float:right; font-weight:700; display:block;}
+            
+}
+
+
+//-------------- calendar
+
+.calendar { 
+    header {background:$tablehead; color:$white; padding:5px;}  
+  table {width:100%; border-collapse: collapse;
+              tr { border-top: 1px solid #eee; background:$white;
+                &:first-child {border-top: none;}
+                th {padding:5px; background:$tablesubhead; color:$dblue;}
+                th:last-child(2) {width:92px;}
+                td {padding:5px; color:$dblue;}
+                
+              }
+              tr:nth-child(2) {border-top: none;}
+        }     
+
+}
+
+
+// chart styles
+
+.expenses, .revenues {background-color:$white;}

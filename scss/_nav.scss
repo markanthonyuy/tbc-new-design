@@ -1,0 +1,154 @@
+// top header
+
+.tab-bar {
+	background: $white;
+	height: 3.438rem;
+    line-height: 3.438rem;
+h1, h2, h3, h4, h5, h6 {
+    height: 3.438rem;
+    line-height: 3.438rem;
+	}
+.right-small {
+          border-left:none; text-align:center; 
+          a {
+            font-size: 1.3rem;
+            &.right-off-canvas-toggle
+            {color:#257bcb;
+              &:hover {color:#1e5da4;}
+
+            }
+            } 
+        }
+ul.notif-icons.right {
+              margin: 0px 39px 0px 0px;
+              height: 55px;
+              position:relative;
+              li {
+                list-style: none;
+                float: left;
+                &.arrwup {padding: 0px; border: 0;}
+                &.pchart { .arrow-up { position: absolute; top: -6px; left: 167px;} }
+                &.bcase { .arrow-up { position: absolute; top: -6px; left: 206px;} }
+                &.bcloud { .arrow-up { position: absolute; top: -6px; left: 243px;} }
+             
+               &:hover  { 
+
+             }
+
+                   a {
+                  color: #a8caea;
+                  padding: 3px;
+                  margin: 1px;
+                  position: relative;
+                  font-size: 1.3rem;
+                  line-height: 59px;
+                 &.active {color:$active;}
+                 .attn {
+                        height: .9rem;
+                         width: .9rem;
+                         border: 1px solid white;
+                                          @include border-radius(100%);
+                                         background: #F00;
+                                         position: absolute;
+                                          right: 1px;
+                                          top: 2px;
+                                          display: block;
+                                          padding: 0;
+                    .icon-attention-alt {
+                                          color: $white;
+                                          font-size: 0.57rem;
+                                          line-height: 0.8rem;
+                                          display: block;
+                                          
+                                          }
+
+                 }
+                  
+                  }
+                  //dropdown
+                  ul {position:absolute; 
+                  margin:0; width:100%; 
+                  background-color:$tbblue; 
+                  right:-27px; width:297px; 
+                  z-index:1;
+                  display: none;
+                  margin-top: -12px;
+                  padding: 0px 1px 1px;
+                z-index: 999;
+                 li { float:none; cursor:pointer; background:$white; border-bottom: 1px solid #cadef7;
+                      padding: 8px;
+                      &:hover {background:#edf4fc;}
+                      &.headin {background:$tbblue; a {color:$white !important;} border:none;}
+                      &:last-child {border:none;}
+                      
+                    a {color:$tbblue !important; font-size: 1rem; line-height:1.2rem; display:block; margin:0; padding:0;
+                      
+                    }
+                 }
+                }
+
+
+                }
+              }
+}
+
+
+//-------- logo
+
+.tb-logo { 
+      float:left;
+      a {
+        display: block;
+        line-height: 3.438rem;
+height: 3.438rem;
+padding: 8px 7px 0;}
+      img {
+        max-width:100px;
+        max-height:40px;
+        }
+      }
+
+// ------ side nav
+
+  .nav-wrap {background-color:#1e5da4; width:38px; float:left; height:100%;  position: absolute;
+
+
+ul {
+  background-color:#1d4c84;
+      margin: 0;
+      list-style:none;
+  position:relative; z-index:1;
+  li { position:relative;
+    a {
+          color: $white;
+          text-align: center;
+          display: block;
+          font-size: 1rem;
+        }
+    &:hover, &.active {background:$sidenavhover;
+     
+    }
+    padding:7px 0; border-bottom: 1px solid #13447e;
+    ul {
+                  display: none;
+                  position:absolute; 
+                  top: 0;
+                  left: 38px;
+                  background-color:$redbg; 
+                  width: 200px;
+                  li{ 
+                    border-bottom: 1px solid $redborder;
+                    font-size: 1.02rem;
+                    &.active, &:hover {background:$redhover;}
+                    a {text-align: left;}
+                    padding: {left:24px; right:10px;}
+                  }
+                 
+                }
+  }
+}
+
+
+
+
+  }

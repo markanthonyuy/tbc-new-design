@@ -1,0 +1,37 @@
+.add-profiles {background:#FFF; overflow:hidden; padding-top: 10px; margin-bottom:1rem;
+  input, select {@extend .blue-input}
+    .row {margin:0 -10px;
+      span#profile-net-fee {display:inline-block;margin-bottom: 10px;}
+      #profile-convenience-fee {max-width:89%; float:left;margin-bottom: 10px;}
+    }
+}
+
+.category-sel {background: #f1f1f1 ; text-align:center;
+padding: 10px; 
+overflow: hidden;
+select {margin: 0 0 0.2rem;}
+.addbtn {margin: 0.2rem 0 0;
+padding: 10px;
+width: 100%;}
+}
+
+
+.linedivider {border-width: 1px 0px 0px;
+border-color: #cdd9e6;}
+
+.jqte {
+    margin: 5px 0 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.notel {margin-top:5px;}
+
+.event-time {
+
+  select {width:25%; float:left;
+     margin-right:10px;
+  }
+  label {padding: 0 5px;float:left; line-height:2.6;}
+}

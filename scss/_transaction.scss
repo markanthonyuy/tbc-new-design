@@ -1,0 +1,126 @@
+.dollar-total {display:inline-block; background:$normalbutton; color:$white;padding: 1px 5px;
+margin: 5px 0 10px;}
+
+.menubtn {
+          ul { list-style:none; width: 66px;
+float: right; margin: 0 0 10px;
+          &.contact-drop {width:30px;}
+                li {float:left; padding: 0 3px;
+                  &.headin {background: $tbblue none repeat scroll 0% 0%;
+                            border: medium none;}
+                  &:hover { .notif-btn { span {background-color:$reportbox;} } }
+                    a { font-size:.7rem; color:$white;
+                      span {background:$normalbutton; @include border-radius(3px);
+                        display: block;width: 1.625rem;
+  height: 1.625rem;
+  text-align: center;
+  line-height: 1.625rem;
+
+                      }
+                    }
+
+                }
+          }
+
+}
+
+.srchform { background:$tbblue; padding:8px; width: 300px; display:none;
+            position: absolute;
+            z-index: 99; top: 38px;
+            right: 0;
+            color:$white;
+            .arrow-up {position:absolute; top: -7px; right: 44px;}
+            &.contact-box {.arrow-up {right: 8px;}}
+           input {border:none; margin:0; height:2rem;
+              &[type="text"] {width:75%;display: inline; margin-top:10px;
+                &.fromdate {width:109px; }
+                  &.search1 {width:240px;}
+                  &.dsearch {margin-top:0;}
+              }
+              &[type="submit"] {width:23%; float:right; background:$normalbutton; color:$white; @include border-radius(3px);}
+           }
+           
+              
+           select {border:none; margin:0;
+           }
+    .entries { 
+      span {margin-top:15px; display:inline-block;}
+      select {width:230px; margin-top:10px; float:right;}
+  }
+}
+
+
+
+
+
+.srchbtn {width:2.125rem; float:right; background:$normalbutton; color:$white; @include border-radius(3px); margin-top: 10px;
+                padding: 0; margin-bottom:0;
+                height: 2.125rem; line-height:2.125rem;
+&:hover {background:$normalbutton;}
+              }
+
+
+//-------------  transactions
+
+
+.transaction-row { border-bottom:1px solid #d0e6fe; padding:10px 0;
+overflow: hidden; background:$white;
+ &>div { background:transparent; padding:0;}
+ &.active {background-color:#d0e6ff; border-bottom:1px solid $white;}
+ 
+
+&>a {text-align: center; display: block; font-size: .675rem; color: #bbb; }
+
+.transactions { 
+
+  div { border-bottom:1px solid #d0e6ff; padding: 0 8px;
+              &.details-wrap {overflow:hidden; background:transparent; padding:0; margin-top:10px; display:none;
+                              .whitebg { background: $white; @include border-radius(5px); overflow:hidden; font-size:0.875rem;
+                                          margin-bottom: 10px;
+                                  div {padding:5px 0;
+                                      span {color:$normalbutton;}
+                                  } 
+                              }
+                            .attachments {background:transparent; margin-bottom: 10px;
+                                div {background:transparent; padding:0;
+                                  img { max-height:24px; margin:0 5px;}
+                                }
+                            }
+                            .last-recon { color:$white; font-size: .875rem; position:relative; margin-bottom:10px;
+                              &.ok { background:$greenbg;}
+                              span {display:block;}
+                              i {position: absolute;
+right: 10px;
+font-size: 30px;
+top: 50%;
+margin-top: -15px;
+display: block;
+width: 30px;
+height: 30px;
+line-height: 30px;
+color:$white ;
+}
+                              }
+                            }
+              &:last-child {border:none;}
+              
+                  i { color:#bbb;} 
+                  }
+  
+  &.approve { 
+    .details-wrap {margin-top:0;}
+    &>div {margin-bottom:10px;}
+    div {border:none;
+          .whitebg {padding:0; background:none;
+            div {padding:0;}}
+    } 
+  }
+
+    }
+}
+
+.contactme { div {background-color:$white; border-bottom:1px solid #eee; padding: 8px;
+             
+                  i { color:#bbb;} 
+                  }
+}
