@@ -1,6 +1,6 @@
-.reportbox-wrap {margin-bottom:10px; padding-left: 5px;
+.reportbox-wrap {margin-bottom:10px; padding-left: 5px; position:relative !important;
 padding-right: 5px;
-.reportbox {background:$reportbox; min-height: 116px; text-align: center;padding: 26px 12px 0;
+.reportbox, .reportbox {background:$reportbox; min-height: 116px; text-align: center;padding: 26px 12px 0;
   &:hover {background:$active;}
   svg {min-height:40px; max-height:40px; height:100%; max-width: 45px; width:100%;
       path {   fill:#fff;}
@@ -15,3 +15,54 @@ width: 1.5rem;}
 
 svg.pportal {height: 1rem; margin: 0 3px;
 width: 1rem;}
+
+.after-click {display:none;}
+
+.reportbox.after-click { 
+	background:#1857a4; padding-top:12px; position:relative;
+	&:hover {background:#1857a4;}
+	select { height: 1.6rem; padding: .2rem; background:transparent; color:#fff; border-color:#89a9d1; position: relative;
+z-index: 1; color:#89a9d1; margin-bottom:8px;}
+	.arrow-down {border-top: 5px solid #89a9d1; border-left: 5px solid transparent; right:15px; top:24px;
+border-right: 5px solid transparent; position:absolute;}
+p {
+  line-height: 1;
+  margin-bottom: 0;
+  color:#fff;
+  display: block;
+}
+label {
+  font-size: 1.5rem;
+  color:#fff;
+}
+input[type="radio"] {
+  display: none;
+}
+	 }
+
+   .slick-slide {
+    position:relative;
+   }
+
+   .slick-next {
+    right: -8px; color:#fff; top:8px; background:none;
+    position: absolute; z-index:2;
+padding: 0;
+&:hover {background:none;}
+}
+.slick-prev {
+    left: -8px; color:#fff; top:8px; background:none;
+    position: absolute; z-index:2;
+padding: 0;
+&:hover {background:none;}
+}
+
+.select-slides {min-width:102px;}
+
+
+.row.padd5 div.reportbox-wrap:last-child {float:left;}
+
+.show {display:block;}
+.hide {display:none;}
+
+

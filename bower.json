@@ -2,7 +2,8 @@
   "name": "foundation-libsass-template",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "slick-carousel": "~1.5.8"
   },
   "resolutions": {
     "jquery-placeholder": "~2.1.2"

@@ -215,3 +215,7 @@
 .icon-up-dir:before { content: '\e8d5'; } /* '' */
 .icon-up-dir-1:before { content: '\e8d6'; } /* '' */
 .icon-up-micro:before { content: '\e8d7'; } /* '' */
+.icon-right-dir:before { content: '\e8d8'; } /* '' */
+.icon-right-dir-1:before { content: '\e8d9'; } /* '' */
+.icon-left-dir-1:before { content: '\e8da'; } /* '' */
+.icon-down-dir-3:before { content: '\e8db'; } /* '' */

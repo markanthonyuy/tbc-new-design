@@ -222,6 +222,10 @@
 <glyph glyph-name="up-dir" unicode="&#xe8d5;" d="m571 171q0-14-10-25t-25-10h-500q-15 0-25 10t-11 25 11 26l250 250q10 10 25 10t25-10l250-250q10-11 10-26z" horiz-adv-x="571.4" />
 <glyph glyph-name="up-dir-1" unicode="&#xe8d6;" d="m0 150l230 400 230-400-460 0z" horiz-adv-x="460" />
 <glyph glyph-name="up-micro" unicode="&#xe8d7;" d="m471 231h-471l235 236z" horiz-adv-x="471" />
+<glyph glyph-name="right-dir" unicode="&#xe8d8;" d="m321 350q0-14-10-25l-250-250q-11-11-25-11t-25 11-11 25v500q0 15 11 25t25 11 25-11l250-250q10-10 10-25z" horiz-adv-x="357.1" />
+<glyph glyph-name="right-dir-1" unicode="&#xe8d9;" d="m0 580l400-230-400-230 0 460z" horiz-adv-x="400" />
+<glyph glyph-name="left-dir-1" unicode="&#xe8da;" d="m400 580l0-460-400 230z" horiz-adv-x="400" />
+<glyph glyph-name="down-dir-3" unicode="&#xe8db;" d="m460 550l-230-400-230 400 460 0z" horiz-adv-x="460" />
 </font>
 </defs>
 </svg>

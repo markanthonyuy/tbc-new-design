@@ -387,6 +387,25 @@ $(document).click(function(event) {
 });
 
 
+
+$( ".frontbox" ).click(function() {
+
+  $( ".frontbox" ).show();
+  $(this).hide();
+  $(".after-click").addClass("hide");
+  $(this).parent(".reportbox-wrap").find(".after-click").removeClass("hide").addClass("show");
+
+  //$(".activity, .category-detail").addClass("show");
+
+   //$(".reportbox2.after-click").delay(10000).removeClass("show");
+   
+  
+});
+
+$( ".frontbox a" ).click(function( event ) {
+  event.preventDefault();
+});
+
 //$( ".slidenav > li > a" ).click(function( event ) {
  // event.preventDefault();
 //});
