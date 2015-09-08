@@ -7226,7 +7226,34 @@ svg.pportal {
     background: none; }
 
 .select-slides {
-  min-width: 102px; }
+  width: 102px; }
+  @media only screen and (min-width: 360px) {
+    .select-slides {
+      width: 120px; } }
+  @media only screen and (min-width: 375px) {
+    .select-slides {
+      width: 130px; } }
+  @media only screen and (min-width: 414px) {
+    .select-slides {
+      width: 145px; } }
+  @media only screen and (min-width: 480px) {
+    .select-slides {
+      width: 180px; } }
+  @media only screen and (min-width: 533px) {
+    .select-slides {
+      width: 210px; } }
+  @media only screen and (min-width: 568px) {
+    .select-slides {
+      width: 225px; } }
+  @media only screen and (min-width: 640px) {
+    .select-slides {
+      width: 260px; } }
+  @media only screen and (min-width: 667px) {
+    .select-slides {
+      width: 275px; } }
+  @media only screen and (min-width: 736px) {
+    .select-slides {
+      width: 305px; } }
 
 .row.padd5 div.reportbox-wrap:last-child {
   float: left; }
