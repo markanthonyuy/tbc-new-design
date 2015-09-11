@@ -3,7 +3,8 @@
   "dependencies": {
     "foundation": "zurb/bower-foundation",
     "font-awesome": "~4.3.0",
-    "slick-carousel": "~1.5.8"
+    "slick-carousel": "~1.5.8",
+    "chartist": "~0.9.4"
   },
   "resolutions": {
     "jquery-placeholder": "~2.1.2"

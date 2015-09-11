@@ -112,4 +112,31 @@ right: -30px;
 
 // chart styles
 
-.expenses, .revenues {background-color:$white;}
+.expenses, .revenues {background-color:$white; position:relative; padding-top:14px;}
+
+
+#expenses .ct-series-a .ct-slice-pie {
+    fill: #ff9f2e;
+}
+
+#expenses .ct-series-b .ct-slice-pie {
+    fill: #de5626;
+}
+
+#revenues .ct-series-a .ct-slice-pie {
+    fill: #77bc3d;
+}
+
+#revenues .ct-series-b .ct-slice-pie {
+    fill: #549121;
+}
+
+.pie-expense, .pie-revenue { position: absolute; top:15px; right:15px; line-height:14px;
+  span {width:14px; height:14px; display:block; float:left; margin-right:5px;}
+}
+
+.pie-expense span {background-color:#de5626;}
+
+.pie-revenue span {background-color:#549121;}
+
+

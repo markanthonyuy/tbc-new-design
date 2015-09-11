@@ -1,5 +1,6 @@
 @import "settings";
 @import "foundation";
+@import "../bower_components/chartist/dist/scss/chartist";
 
 
 
@@ -102,4 +103,5 @@ $items-in-list: 2;
 @import "payment-profiles";
 @import "payment-profiles-add";
 @import "footer";
+
 
