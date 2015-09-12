@@ -185,7 +185,7 @@ $.fcdp = {
 		// If there's a time picker, generate its display.
 		if (opts.hasTimePicker && !opts.fixed) {
 			var ts = $('<a class="time-selector"></a>');
-			ts.append('<i class="fi-clock"></i><span class="value"></span>');
+			ts.append('<i class="icon-calendar"></i><span class="value"></span>');
 			sel.append(ts);	
 			sel.addClass('time');
 				
@@ -601,8 +601,9 @@ $.fcdp = {
 				$.fcdp.setFieldDate(opts, newDate);
 				
 				opts.input.trigger('dateChange', [opts]);
-				dp.hide();
+				//dp.hide(); //don not hide the calendar when clicked ;)
 			});
+
 		}
 	},
 	

@@ -50,13 +50,13 @@
               position: absolute;
               top: -51px; right: -26px;
               i {font-size:1.5rem;}
-               @media #{$medium-up} {top: 100px;}
+               @media #{$medium-up} {top: 106px;}
             }
     .up-arr {font-size: 1.8rem;
 position: absolute;
 top: -20px;
 right: -30px;
-@media #{$medium-up} {top: 30px;}
+@media #{$medium-up} {top: 38px;}
 }
   }
   &.green { header {padding: 3px 5px; text-transform:uppercase; background:$greenhead;}
@@ -139,4 +139,78 @@ right: -30px;
 
 .pie-revenue span {background-color:#549121;}
 
+.calendar .date-picker .week.labels .day {
+    background: #008CBA none repeat scroll 0% 0%;
+    color: #FFF;
+    border: 1px solid #008CBA;
+    height: 23px;
+    line-height: 9px;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.calendar .date-picker .header .month {
+    width: 80%;
+    margin: 0px 20% 0px 2%;
+    text-align: left;
+    height: 28px;
+    font-size: 16px;
+    color: #FFF;
+    padding: 5px 0px;
+    line-height: 1;
+    background:#3f638c;
+    text-align: center;
+}
+
+.calendar .date-picker .header {background:#3f638c;color: #FFF;}
+
+.calendar .date-picker .week.labels {
+    line-height: 1.2; 
+}
+
+.calendar .date-picker .header .month-nav.prev {
+    left: 0px;
+}
+
+.calendar .date-picker .header .month {width:98%;}
+
+.calendar .date-picker .week.labels .day {
+background: #2d4765; border-color: #2d4765;
+}
+
+.calendar .date-picker .week .day.other-month {
+    color: #7192b7;
+    border: 1px solid #3f638c;
+    background: #3f638c;
+}
+
+.calendar .date-picker .week .day {
+    color: #fff;
+    border: 1px solid #3f638c;
+    background: #3f638c;
+}
+
+.calendar .date-picker .week .day.weekend {color:#Fff; background:#38587c; border-color:#38587c;}
+
+.calendar .date-picker .week .day.other-month.weekend {color: #7192b7;background:#38587c; border-color:#38587c;}
+
+.calendar .date-picker .week .day.weekend.current:before, .calendar .date-picker .week .day.current:before {
+  content:"\f007"; 
+   font-family:FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+
+}
+.calendar .date-picker .week .day.weekend.current, {
+
+ background:#38587c; border-color:#38587c;
+}
+
+.calendar .date-picker .week .day.current {
+
+  border: 1px solid #3f638c;
+    background: #3f638c;
+}
 

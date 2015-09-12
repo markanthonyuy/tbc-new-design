@@ -2360,13 +2360,13 @@
 	"\/bower_components\/foundation_calendar_date_time_picker-master\/foundation_calendar.js": {
 		"fileType": 64,
 		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/bower_components\/foundation_calendar_date_time_picker-master\/foundation_calendar.js",
 		"outputAbbreviatedPath": "\/bower_components\/foundation_calendar_date_time_picker-master\/min\/foundation_calendar-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
 	"\/bower_components\/foundation_calendar_date_time_picker-master\/helpers\/date-helpers.js": {
 		"fileType": 64,
@@ -2416,6 +2416,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/bower_components\/foundation_calendar_date_time_picker-master\/js\/jquery.js",
 		"outputAbbreviatedPath": "\/bower_components\/foundation_calendar_date_time_picker-master\/js\/min\/jquery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/foundation_calendar_date_time_picker-master\/min\/foundation_calendar-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/foundation_calendar_date_time_picker-master\/min\/foundation_calendar-min.js",
+		"outputAbbreviatedPath": "\/bower_components\/foundation_calendar_date_time_picker-master\/min\/min\/foundation_calendar-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

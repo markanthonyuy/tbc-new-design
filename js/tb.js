@@ -157,7 +157,7 @@ $( ".drop-approve" ).click(function() {
 
 
 
-$( ".transaction-row > a, .tbsettings > a, .drop-approve " ).click(function( event ) {
+$( ".transaction-row > a, .tbsettings > a, .drop-approve" ).click(function( event ) {
   event.preventDefault();
   
 });
