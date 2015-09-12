@@ -4,7 +4,8 @@
     "foundation": "zurb/bower-foundation",
     "font-awesome": "~4.3.0",
     "slick-carousel": "~1.5.8",
-    "chartist": "~0.9.4"
+    "chartist": "~0.9.4",
+    "foundation-datepicker": "~1.4.0"
   },
   "resolutions": {
     "jquery-placeholder": "~2.1.2"

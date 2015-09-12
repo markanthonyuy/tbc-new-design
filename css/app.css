@@ -6889,6 +6889,277 @@ th.hide-for-touch {
     top: 0;
     left: 0; }
 
+.calendar {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative; }
+  .calendar > .hidden {
+    display: none; }
+  .calendar .selector {
+    width: 100%;
+    display: table; }
+    .calendar .selector .clear {
+      position: absolute;
+      height: 24px;
+      width: auto;
+      right: 5px;
+      top: 11px; }
+    .calendar .selector .date-selector,
+    .calendar .selector .time-selector {
+      display: table-cell;
+      margin: 0;
+      padding: 0;
+      height: 24px;
+      width: 100%;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0;
+      border-radius: 0;
+      background-color: #FFFFFF;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #cccccc;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+      color: rgba(0, 0, 0, 0.75);
+      display: block;
+      font-family: inherit;
+      font-size: 0.875rem;
+      height: 2.3125rem;
+      margin: 0 0 1rem 0;
+      padding: 0.5rem;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .calendar .selector .date-selector:focus,
+      .calendar .selector .time-selector:focus {
+        background: #fafafa;
+        border-color: #999999;
+        outline: none; }
+      .calendar .selector .date-selector:disabled,
+      .calendar .selector .time-selector:disabled {
+        background-color: #DDDDDD;
+        cursor: default; }
+      .calendar .selector .date-selector[disabled],
+      .calendar .selector .date-selector[readonly],
+      fieldset[disabled] .calendar .selector .date-selector,
+      .calendar .selector .time-selector[disabled],
+      .calendar .selector .time-selector[readonly],
+      fieldset[disabled] .calendar .selector .time-selector {
+        background-color: #DDDDDD;
+        cursor: default; }
+      .calendar .selector .date-selector .value,
+      .calendar .selector .time-selector .value {
+        margin-left: 10px; }
+    .calendar .selector.date.time .date-selector {
+      display: table-cell;
+      width: 50%;
+      padding-top: 11px;
+      padding-bottom: 5px; }
+    .calendar .selector.date.time .time-selector {
+      display: table-cell;
+      width: 50%;
+      padding-top: 11px;
+      padding-bottom: 5px; }
+  .calendar .time-picker {
+    position: absolute;
+    right: 0;
+    display: none;
+    border: 1px solid #006687;
+    width: auto;
+    height: auto;
+    background: #FFF;
+    z-index: 10000; }
+    .calendar .time-picker .header {
+      background: #006687;
+      color: #FFF;
+      width: 100%;
+      position: relative; }
+      .calendar .time-picker .header .time {
+        width: 97%;
+        margin: 0 2% 0 0%;
+        text-align: right;
+        height: 28px;
+        font-size: 16px;
+        color: #FFF;
+        padding: 5px 0; }
+    .calendar .time-picker > .time .value-control {
+      padding: 10px 3px 0 3px;
+      width: auto;
+      text-align: center;
+      display: inline-block;
+      float: left; }
+      .calendar .time-picker > .time .value-control label {
+        background: #008CBA;
+        color: #FFF;
+        font-size: 11px;
+        text-align: center;
+        display: block;
+        margin: -10px -3px 0 -3px;
+        padding: 5px 0; }
+      .calendar .time-picker > .time .value-control a.value-change {
+        display: block;
+        margin: 0 auto;
+        line-height: 0; }
+        .calendar .time-picker > .time .value-control a.value-change span {
+          display: block;
+          width: 0;
+          height: 0;
+          font-size: 0;
+          margin: 0 auto; }
+        .calendar .time-picker > .time .value-control a.value-change.up span {
+          border: 8px solid transparent;
+          border-bottom: 8px solid #333; }
+        .calendar .time-picker > .time .value-control a.value-change.down span {
+          border: 8px solid transparent;
+          border-top: 8px solid #333; }
+        .calendar .time-picker > .time .value-control a.value-change:before, .calendar .time-picker > .time .value-control a.value-change:after {
+          content: " ";
+          display: table; }
+        .calendar .time-picker > .time .value-control a.value-change:after {
+          clear: both; }
+      .calendar .time-picker > .time .value-control .display {
+        display: block;
+        padding: 0 5px;
+        height: 25px;
+        width: 40px;
+        text-align: center;
+        color: #008CBA;
+        margin-top: 5px;
+        margin-bottom: 5px; }
+  .calendar .date-picker {
+    position: absolute;
+    left: 0;
+    display: none;
+    border: 1px solid #006687;
+    width: 50%;
+    height: auto;
+    background: #FFF;
+    z-index: 10000; }
+    .calendar .date-picker .header {
+      background: #006687;
+      width: 100%;
+      position: relative; }
+      .calendar .date-picker .header .month {
+        width: 80%;
+        margin: 0 20% 0 2%;
+        text-align: left;
+        height: 28px;
+        font-size: 16px;
+        color: #FFF;
+        padding: 5px 0; }
+      .calendar .date-picker .header .month-nav {
+        position: absolute;
+        display: block;
+        top: 7px; }
+        .calendar .date-picker .header .month-nav span {
+          display: block;
+          width: 0;
+          font-size: 0; }
+        .calendar .date-picker .header .month-nav.next {
+          right: 0; }
+          .calendar .date-picker .header .month-nav.next span {
+            border: 6.4px solid #EEE;
+            border-top: 6.4px solid transparent;
+            border-bottom: 6.4px solid transparent;
+            border-right: 6.4px solid transparent; }
+        .calendar .date-picker .header .month-nav.prev {
+          right: 24px; }
+          .calendar .date-picker .header .month-nav.prev span {
+            border: 6.4px solid #EEE;
+            border-top: 6.4px solid transparent;
+            border-bottom: 6.4px solid transparent;
+            border-left: 6.4px solid transparent; }
+        .calendar .date-picker .header .month-nav:hover.next span {
+          border: 6.4px solid #d4d4d4;
+          border-top: 6.4px solid transparent;
+          border-bottom: 6.4px solid transparent;
+          border-right: 6.4px solid transparent; }
+        .calendar .date-picker .header .month-nav:hover.prev span {
+          border: 6.4px solid #d4d4d4;
+          border-top: 6.4px solid transparent;
+          border-bottom: 6.4px solid transparent;
+          border-left: 6.4px solid transparent; }
+    .calendar .date-picker .week {
+      display: block;
+      width: 100%;
+      height: 36px;
+      white-space: no-wrap;
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+      .calendar .date-picker .week .day {
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        background: #FFF;
+        color: #008CBA;
+        border: 1px solid #FFF;
+        vertical-align: middle;
+        padding: 3px;
+        width: 14.2857142857%;
+        height: 36px;
+        line-height: 29px; }
+        .calendar .date-picker .week .day.weekend {
+          background: #e7e7e7;
+          color: #008CBA;
+          border: 1px solid #e7e7e7; }
+        .calendar .date-picker .week .day.weekend.current,
+        .calendar .date-picker .week .day.current {
+          background: #f08a24;
+          color: #FFF;
+          border: 1px solid #f08a24; }
+        .calendar .date-picker .week .day.other-month {
+          color: #CCC;
+          background: #FFF;
+          border: 1px solid #FFF; }
+        .calendar .date-picker .week .day.other-month.weekend {
+          color: #BBB;
+          background: #e7e7e7;
+          border: 1px solid #e7e7e7; }
+      .calendar .date-picker .week span.day {
+        color: #CCC; }
+        .calendar .date-picker .week span.day.weekend {
+          color: #CCC; }
+      .calendar .date-picker .week a.day:hover {
+        border: 1px solid #008CBA; }
+      .calendar .date-picker .week a.day.weekend:hover {
+        border: 1px solid #008CBA; }
+      .calendar .date-picker .week.labels {
+        height: 23px; }
+        .calendar .date-picker .week.labels .day {
+          background: #008CBA;
+          color: #FFF;
+          border: 1px solid #008CBA;
+          height: 23px;
+          line-height: 13px;
+          padding: 5px;
+          font-size: 11px; }
+  .calendar.fixed {
+    z-index: 0; }
+    .calendar.fixed .date-picker {
+      display: block;
+      position: relative;
+      width: 100%; }
+  @media only screen and (max-width: 46em) {
+    .calendar .date-picker {
+      width: 100%; }
+      .calendar .date-picker .week {
+        height: 49.5px; }
+        .calendar .date-picker .week .day {
+          height: 49.5px;
+          line-height: 42.5px;
+          font-size: 22px; } }
+  @media only screen and (min-width: 46.0625em) and (max-width: 64em) {
+    .calendar .date-picker {
+      width: 75%; }
+      .calendar .date-picker .week {
+        height: 40.5px;
+        line-height: 33.5px; }
+        .calendar .date-picker .week .day {
+          height: 40.5px;
+          font-size: 18px; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -7484,29 +7755,29 @@ ul.off-canvas-list li a {
     font-weight: 700;
     display: block; }
 
-.calendar header {
+.calendar-home header {
   background: #5b80ad;
   color: #FFFFFF;
   padding: 5px; }
 
-.calendar table {
+.calendar-home table {
   width: 100%;
   border-collapse: collapse; }
-  .calendar table tr {
+  .calendar-home table tr {
     border-top: 1px solid #eee;
     background: #FFFFFF; }
-    .calendar table tr:first-child {
+    .calendar-home table tr:first-child {
       border-top: none; }
-    .calendar table tr th {
+    .calendar-home table tr th {
       padding: 5px;
       background: #cfdbe9;
       color: #3e4a58; }
-    .calendar table tr th:last-child(2) {
+    .calendar-home table tr th:last-child(2) {
       width: 92px; }
-    .calendar table tr td {
+    .calendar-home table tr td {
       padding: 5px;
       color: #3e4a58; }
-  .calendar table tr:nth-child(2) {
+  .calendar-home table tr:nth-child(2) {
     border-top: none; }
 
 .expenses, .revenues {
