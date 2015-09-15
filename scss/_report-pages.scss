@@ -1,0 +1,160 @@
+.mar-bot-10 {
+  margin-bottom: 10px !important;
+}
+
+.mar-lef-20 {
+  margin-left: 20px !important;
+}
+
+.no-border-bot {
+  border-bottom: none !important;
+}
+
+.content-wrap-header {
+  margin-top: -10px;
+  width: 100%;
+  height: 43px;
+  border-top: 1px solid $gray;
+  background: url('../img/bg-content-header.jpg') repeat-x top left;
+
+  h5 {
+    margin-left: 30px;
+    line-height: 35px;
+  }
+
+}
+
+.content-wrap-body {
+  margin: 15px 0 0 30px;
+
+  .content-wrap-body-header {
+    height: 44px;
+    background: $reportbox;
+
+    h6 {
+      line-height: 44px;
+      color: #fff;
+      margin-left: 16px;
+      font-size: 16px;
+    }
+  }
+
+  .content-wrap-body-container {
+    background: #fff;
+    overflow: hidden;
+
+    .content-wrap-body-container-inputs {
+      width: 615px;
+      margin: 26px auto;
+      border-bottom: 1px solid #cdd9e6;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      label {
+        display: inline;
+        font-weight: bold;
+      }
+
+      select {
+        width: auto;
+        display: inline;
+        border: 1px solid #c6ddfa;
+        background: #ecf5ff;
+      }
+
+      input[type="text"] {
+        display: inline;
+        width: auto;
+        border: 1px solid #c6ddfa;
+        background: #ecf5ff;
+      }
+
+      .circle {
+        height: 21px;
+        width: 21px;
+        border-radius: 50%;
+        background: #333;
+        display: inline-block;
+        cursor: pointer;
+        margin: 5px 10px 5px 0;
+      }
+
+      .circle:hover {
+        border: 1px solid #ccc;
+      }
+
+      .selected {
+        margin: 0;
+        vertical-align: -5px;
+      }
+
+      .blue {
+        background-color: #246dc6;
+      }
+
+      .light-green {
+        background-color: #7cd148;
+      }
+
+      .sky-blue {
+        background-color: #a4bdfd;
+      }
+
+      .light-blue {
+        background-color: #46d7dc;
+      }
+
+      .aqua-blue {
+        background-color: #bcf3df;
+      }
+
+      .green {
+        background-color: #51b749;
+      }
+    }
+
+    .content-wrap-body-reports-table {
+      width: 615px;
+      margin: 0 auto 50px auto;
+      border: none;
+
+      th {
+        background: #5a80ac;
+        color: #fff;
+        text-align: center;
+      }
+
+      tr {
+        background: #f9f9f9;
+
+        td {
+          border-bottom: 1px solid #eee;
+
+          .content-wrap-body-reports-table-item-time {
+            color: #aaa;
+            font-size: 12px;
+          }
+
+          .red {
+            color: red;
+          }
+
+          .green {
+            color: green;
+          }
+        }
+
+        .action {
+          a {
+            font-size: 20px;
+            i {
+              color: #8babce;
+            }
+          } 
+        }
+      }
+    }
+  }
+}
