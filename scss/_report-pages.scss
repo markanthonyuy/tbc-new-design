@@ -44,7 +44,8 @@
     overflow: hidden;
 
     .content-wrap-body-container-inputs {
-      width: 615px;
+      max-width: 615px;
+      width: auto;
       margin: 26px auto;
       border-bottom: 1px solid #cdd9e6;
 
