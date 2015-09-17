@@ -1,28 +1,3 @@
-@media only screen and (min-width: 1020px) {
-	.content-wrap {
-		max-width: 100%;
-	}
-	.content-wrap-header {
-		width: 100%;
-	}
-
-	.content-wrap-body-container {
-		width: 1020px;
-	}
-}
-
-@media only screen and (min-width: 320px) and (max-width: 940px) {
-
-	.content-wrap-body {
-		margin: 0;
-	}
-
-	
-	.form-990, .services-budget-screenshot {
-		text-align: center !important;
-	}
-}
-
 .no-margin-bot {
 	margin-bottom: 0 !important;
 }
@@ -109,4 +84,32 @@
 	background: #999999;
 	border-radius: 3px;
 	padding: 7px;
+}
+
+@media only screen and (min-width: 1020px) {
+	.content-wrap {
+		max-width: 100%;
+	}
+	.content-wrap-header {
+		width: 100%;
+	}
+
+	.content-wrap-body-header {
+		width: 1020px;
+	}
+
+	.content-wrap-body-container {
+		width: 1020px;
+	}
+}
+
+@media only screen and (min-width: 220px) and (max-width: 940px) {
+
+	.content-wrap-body {
+		margin: 0;
+	}
+	
+	.form-990, .services-budget-screenshot {
+		text-align: center !important;
+	}
 }
