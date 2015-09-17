@@ -1,3 +1,4 @@
+
 .help-content-wrap-body-container {
   background: #fff;
     padding: 30px 0 50px;
@@ -87,5 +88,12 @@
       color: #fff;
       margin-top: 3px;
     }
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+
+  .help-content-wrap-body-container {
+    width: 1020px;
   }
 }
