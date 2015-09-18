@@ -1,202 +1,371 @@
 
 .contentbg {
-          background:#eee; margin-top:10px; padding:10px;
-          }
-
-
-
-
+  background: #eee; 
+  margin-top: 10px; 
+  padding: 10px;
+}
 
 //------- checks
 
+.checks { 
+  margin-bottom: 10px; 
+  color: $white; 
+  position: relative; 
+  height: 77px;
 
-.checks { margin-bottom: 10px; color:$white; position:relative; height:77px;
-   @media #{$medium-up} { height:auto; }
+  @media #{$medium-up} { height:auto; }
+
   header { 
-            @media #{$medium-up} { text-align:center; }
-          }
+    @media #{$medium-up} { text-align:center; }
+  }
 
+  div {
+    padding: 0 5px; 
+    display: inline-block;
 
-  div {padding: 0 5px; display: inline-block;
-    div {padding:1px 0 0; position:relative; 
-       @media #{$medium-up} { text-align:right; height:60px; }
-       .big-amount { 
-                 @media #{$medium-up} { display:block; }
-       }
-      .addamount {position: absolute;
-                    bottom: -15px;
-                    left: 0;
-                     @media #{$medium-up} { display:inline-block; position:relative; bottom:25px;}
-                  }
+    div {
+      padding: 1px 0 0; 
+      position:relative; 
 
-                  .recdate {position: absolute;
-                    bottom: -17px;
-                    left: 0;
-                       @media #{$medium-up} {display: block; text-align:left;position:relative; bottom:0;}
-                  }
-                 }
-    &.amount {width:30%; font-size:.85rem;font-weight: 700;
-         @media #{$medium-up} { font-size: 1.8rem; width:100%; height:60px; padding-top:10px;}
-         }
-    &.recdes {width:55%; font-size: .85rem; text-align:center;
-    @media #{$medium-up} { width:100%; text-align:left; margin-top:-18px; padding-bottom:15px;
-      div {height:40px;}
+      @media #{$medium-up} { 
+        text-align:right; 
+        height:60px; 
+      }
+
+      .big-amount { 
+        @media #{$medium-up} { display:block; }
+      }
+
+      .addamount {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+
+        @media #{$medium-up} { 
+          display: inline-block; 
+          position: relative; 
+          bottom: 25px;
+        }
+      }
+
+      .recdate {
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+
+        @media #{$medium-up} {
+          display: block; 
+          text-align: left;
+          position: relative; 
+          bottom: 0;
+        }
+      }
+    }
+
+    &.amount {
+      width: 30%; 
+      font-size: .85rem;
+      font-weight: 700;
+
+      @media #{$medium-up} { 
+        font-size: 1.8rem; 
+        width: 100%; 
+        height: 60px; 
+        padding-top: 10px;
+      }
+    }
+
+    &.recdes {
+      width: 55%; 
+      font-size: .85rem; 
+      text-align: center;
+
+      @media #{$medium-up} { 
+        width: 100%; 
+        text-align: left; 
+        margin-top: -18px; 
+        padding-bottom: 15px;
+
+        div { height:40px; }
+      }
+    }
+
+    &.arrws {
+      width:29px; 
+      float:right;
+
+      @media #{$medium-up} {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+      }
+    }
+
+    .states {
+      font-size: 1.23rem;
+      position: absolute;
+      top: -51px; 
+      right: -26px;
+      i { font-size:1.5rem; }
+      @media #{$medium-up} {
+        top: 106px;
+      }
+    }
+
+    .up-arr {
+      font-size: 1.8rem;
+      position: absolute;
+      top: -20px;
+      right: -30px;
+
+      @media #{$medium-up} {
+        top: 38px;
+      }
     }
   }
-    &.arrws {width:29px; float:right;
-        @media #{$medium-up} {position: absolute;right: 0;height: 100%;top: 0;}
+
+  &.green { 
+    background-color:$greenbg; 
+
+    header {
+      padding: 3px 5px; 
+      text-transform: uppercase; 
+      background: $greenhead;
     }
-    .states {font-size: 1.23rem;
-              position: absolute;
-              top: -51px; right: -26px;
-              i {font-size:1.5rem;}
-               @media #{$medium-up} {top: 106px;}
-            }
-    .up-arr {font-size: 1.8rem;
-position: absolute;
-top: -20px;
-right: -30px;
-@media #{$medium-up} {top: 38px;}
-}
+
+    .addamount {
+      color: #15B948; 
+      font-size: 9px; 
+      background: $white; 
+      padding: 0 3px;
+      @include border-radius(100px); 
+    }
   }
-  &.green { header {padding: 3px 5px; text-transform:uppercase; background:$greenhead;}
-              background-color:$greenbg; 
-              .addamount {color:#15B948; font-size:9px; background:$white; @include border-radius(100px); padding:0 3px;}
+
+  &.red { 
+    background-color: $redbg; 
+
+    header {
+      padding: 3px 5px; 
+      text-transform: uppercase; 
+      background: $redhead;
+    }
+
+    .addamount {
+      color: $redbg; 
+      font-size: 9px; 
+      background: $white; 
+      padding: 0 3px;
+      @include border-radius(100px); 
+    }
+  }
+
+  &.blue { 
+    background-color: $bluebg; 
+
+    header {
+      padding: 3px 5px; 
+      text-transform: uppercase; 
+      background: $bluehead;
+    }
+
+    .addamount {
+      color: $bluebg; 
+      font-size: 9px; 
+      background: $white; 
+      @include border-radius(100px); 
+      padding:0 3px;
+    }
+  }
 }
-
-&.red { header {padding: 3px 5px; text-transform:uppercase; background:$redhead;}
-              background-color:$redbg; 
-              .addamount {color:$redbg; font-size:9px; background:$white; @include border-radius(100px); padding:0 3px;}
-}
-
-&.blue { header {padding: 3px 5px; text-transform:uppercase; background:$bluehead;}
-              background-color:$bluebg; 
-              .addamount {color:$bluebg; font-size:9px; background:$white; @include border-radius(100px); padding:0 3px;}
-}
-
-
-}
-
 
 //------------- revenues
 
-
-.totalexp { background-color:#de5626; color:$white; padding:3px 5px;margin-bottom:10px; 
-              .amt {float:right; font-weight:700; display:block;}
-             
+.totalexp { 
+  background-color: #de5626; 
+  color: $white; 
+  padding: 3px 5px;
+  margin-bottom: 10px; 
+  .amt {
+    float: right; 
+    font-weight: 700; 
+    display: block;
+  }
 }
 
-.totalrev { background-color:#4f9c10; color:$white; padding:3px 5px;margin-bottom:10px; 
-              .amt {float:right; font-weight:700; display:block;}
-            
-}
+.totalrev { 
+  background-color: #4f9c10; 
+  color: $white; 
+  padding: 3px 5px;
+  margin-bottom: 10px; 
 
+  .amt {
+    float:right; 
+    font-weight:700; 
+    display:block;
+  }
+}
 
 //-------------- calendar
 
 .calendar-home { 
-    header {background:$tablehead; color:$white; padding:5px;}  
-  table {width:100%; border-collapse: collapse;
-              tr { border-top: 1px solid #eee; background:$white;
-                &:first-child {border-top: none;}
-                th {padding:5px; background:$tablesubhead; color:$dblue;}
-                th:last-child(2) {width:92px;}
-                td {padding:5px; color:$dblue;}
-                
-              }
-              tr:nth-child(2) {border-top: none;}
-        }     
 
+  header {
+    background:$tablehead; 
+    color:$white; 
+    padding:5px;
+  }  
+
+  table {
+    width:100%; 
+    border-collapse: collapse;
+
+    tr { 
+      border-top: 1px solid #eee; 
+      background:$white;
+
+      &:first-child { border-top: none; }
+
+      th {
+        padding: 5px; 
+        background: $tablesubhead; 
+        color:$dblue;
+      }
+
+      th:last-child(2) {
+        width:92px;
+      }
+
+      td {
+        padding:5px; 
+        color:$dblue;
+      }
+
+    }
+
+    tr:nth-child(2) {
+      border-top: none;
+    }
+  }     
 }
-
 
 // chart styles
 
-.expenses, .revenues {background-color:$white; position:relative; padding-top:14px;}
+.expenses, .revenues {
+  background-color: $white; 
+  position:relative; 
+  padding-top:14px;
+}
 
 
 #expenses .ct-series-a .ct-slice-pie {
-    fill: #ff9f2e;
+  fill: #ff9f2e;
 }
 
 #expenses .ct-series-b .ct-slice-pie {
-    fill: #de5626;
+  fill: #de5626;
 }
 
 #revenues .ct-series-a .ct-slice-pie {
-    fill: #77bc3d;
+  fill: #77bc3d;
 }
 
 #revenues .ct-series-b .ct-slice-pie {
-    fill: #549121;
+  fill: #549121;
 }
 
-.pie-expense, .pie-revenue { position: absolute; top:15px; right:15px; line-height:14px;
-  span {width:14px; height:14px; display:block; float:left; margin-right:5px;}
+.pie-expense, .pie-revenue { 
+  position: absolute; 
+  top:15px; 
+  right:15px; 
+  line-height:14px;
+
+  span {
+    width:14px; 
+    height:14px; 
+    display:block; 
+    float:left; 
+    margin-right:5px;
+  }
 }
 
-.pie-expense span {background-color:#de5626;}
+.pie-expense span { background-color:#de5626; }
 
-.pie-revenue span {background-color:#549121;}
+.pie-revenue span { background-color:#549121; }
 
 .calendar .date-picker .week.labels .day {
-    background: #008CBA none repeat scroll 0% 0%;
-    color: #FFF;
-    border: 1px solid #008CBA;
-    height: 23px;
-    line-height: 9px;
-    padding: 5px;
-    font-size: 11px;
+  background: #008CBA none repeat scroll 0% 0%;
+  color: #FFF;
+  border: 1px solid #008CBA;
+  height: 23px;
+  line-height: 9px;
+  padding: 5px;
+  font-size: 11px;
 }
 
 .calendar .date-picker .header .month {
-    width: 80%;
-    margin: 0px 20% 0px 2%;
-    text-align: left;
-    height: 28px;
-    font-size: 16px;
-    color: #FFF;
-    padding: 5px 0px;
-    line-height: 1;
-    background:#3f638c;
-    text-align: center;
+  width: 80%;
+  margin: 0px 20% 0px 2%;
+  text-align: left;
+  height: 28px;
+  font-size: 16px;
+  color: #FFF;
+  padding: 5px 0px;
+  line-height: 1;
+  background:#3f638c;
+  text-align: center;
 }
 
-.calendar .date-picker .header {background:#3f638c;color: #FFF;}
+.calendar .date-picker .header {
+  background: #3f638c;
+  color: #FFF;
+}
 
 .calendar .date-picker .week.labels {
-    line-height: 1.2; 
+  line-height: 1.2; 
 }
 
 .calendar .date-picker .header .month-nav.prev {
-    left: 0px;
+  left: 0px;
 }
 
-.calendar .date-picker .header .month {width:98%;}
+.calendar .date-picker .header .month {
+  width:98%;
+}
 
 .calendar .date-picker .week.labels .day {
-background: #2d4765; border-color: #2d4765;
+  background: #2d4765; 
+  border-color: #2d4765;
 }
 
 .calendar .date-picker .week .day.other-month {
-    color: #7192b7;
-    border: 1px solid #3f638c;
-    background: #3f638c;
+  color: #7192b7;
+  border: 1px solid #3f638c;
+  background: #3f638c;
 }
 
 .calendar .date-picker .week .day {
-    color: #fff;
-    border: 1px solid #3f638c;
-    background: #3f638c;
+  color: #fff;
+  border: 1px solid #3f638c;
+  background: #3f638c;
 }
 
-.calendar .date-picker .week .day.weekend {color:#Fff; background:#38587c; border-color:#38587c;}
+.calendar .date-picker .week .day.weekend {
+  color: #fff; 
+  background: #38587c; 
+  border-color: #38587c;
+}
 
-.calendar .date-picker .week .day.other-month.weekend {color: #7192b7;background:#38587c; border-color:#38587c;}
+.calendar .date-picker .week .day.other-month.weekend {
+  color: #7192b7;
+  background: #38587c; 
+  border-color: #38587c;
+}
 
 .calendar .date-picker .week .day.weekend.current:before, .calendar .date-picker .week .day.current:before {
   content:"\f007"; 
-   font-family:FontAwesome;
+  font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
   display: inline-block;
@@ -204,13 +373,13 @@ background: #2d4765; border-color: #2d4765;
 
 }
 .calendar .date-picker .week .day.weekend.current, {
-
- background:#38587c; border-color:#38587c;
+ background: #38587c; 
+ border-color: #38587c;
 }
 
 .calendar .date-picker .week .day.current {
 
   border: 1px solid #3f638c;
-    background: #3f638c;
+  background: #3f638c;
 }
 

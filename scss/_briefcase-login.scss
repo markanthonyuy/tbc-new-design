@@ -1,174 +1,389 @@
-.srch-input {  position:relative; margin-bottom: 15px;
-  form {max-width: 262px;
-position: relative;
-  .dsearch {max-width: 178px;
-height: 1.9rem;border: none;
-box-shadow: none;
-width: 100%;}
+.srch-input {  
+  position: relative; 
+  margin-bottom: 15px;
+
+  form {
+    max-width: 262px;
+    position: relative;
+
+    .dsearch {
+      max-width: 178px;
+      height: 1.9rem;border: none;
+      box-shadow: none;
+      width: 100%;
+    }
+  }
+
+  .sbtn {
+    @extend .srchbtn;
+    position: absolute;
+    margin-top: 0;
+    top: 0;
+    right: 50px;
+    width: 1.9rem;
+    height: 1.9rem;
+    line-height: 1.9rem;
+  }
 }
-.sbtn {
 
-  @extend .srchbtn ;
-  position: absolute;
-  margin-top: 0;
-  top:0;
-  right:50px;
-  width: 1.9rem;
-  height: 1.9rem;
-  line-height: 1.9rem;
+.briefcases {
 
+  .scrollers {
+    background: $white; 
+    height: 215px; 
+    overflow-y: scroll;
+  } 
+
+  ul {
+    list-style: none; 
+    margin: 0 10px;
+
+    li {
+      border-bottom: 1px solid #ddd; 
+      padding: 5px 0;
+    }
+
+    &.tabs {
+      margin: 10px 0;
+
+      li > a {
+        padding: 7px 10px;
+      }
+    }
+  }
+
+  .bhead {
+    background: $tbblue; 
+    overflow: hidden; 
+    padding: 7px 10px 5px;
+
+    header { 
+      float:left; 
+      color:$white;
+    }
+  }
+
+  .icon-folder-open {
+    color:$redhover;
+  }
+
+  .icon-folder {
+    color:$tbblue;
+  }
 }
+
+
+.tab-wrap {
+  background-color: $tbblue; 
+  color: $white; 
+  position: relative;
 }
-
-
-
- .briefcases {
-          .scrollers {background:$white; height:215px; overflow-y:scroll;} 
-          ul {list-style:none; margin:0 10px;
-              li {border-bottom: 1px solid #ddd; padding: 5px 0;}
-            &.tabs {margin:10px 0;
-              li > a {    padding: 7px 10px;}
-            }
-          }
-          .bhead {
-                    background:$tbblue; overflow:hidden; padding: 7px 10px 5px;
-                    header { float:left; color:$white;}
-                  }
-          .icon-folder-open {color:$redhover;}
-          .icon-folder {color:$tbblue;}
-              }
-
-
-.tab-wrap {background-color:$tbblue; color:$white; position:relative;}
 
 .tabs { 
-  .tab-title { padding:0; border:none;
-    &.active { a { color:#3E4A58;
-       &:hover {background-color:$white; color:#3E4A58;}}}
-      &>a {background-color:$tbblue; color:$white;
-          &:hover {background-color:$tbblue; color:$white;}
+  .tab-title { 
+    padding: 0; 
+    border: none;
+
+    &.active { 
+      a { 
+        color: #3E4A58;
+        &:hover {
+          background-color: $white;
+          color: #3E4A58;
+        }
+      }
+    }
+
+     &>a {
+      background-color: $tbblue;
+      color: $white;
+
+      &:hover {
+        background-color: $tbblue; 
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.tabs-content { 
+  margin-bottom: 0;
+
+  .content { 
+    background-color: $white;
+
+    form { 
+      overflow: hidden; 
+      display: block;
+
+      span {
+        float: right; 
+        line-height: 2.1;
+
+        &.tabmenusfile {
+          float: left; 
+          padding: 0px 10px; 
+          color: $tbblue;
+
+          i { margin: 0 5px; }
+        }
+      }
+
+      select {
+        float: right; 
+        width: 100px; 
+        margin: 0 10px 10px; 
+        @extend .blue-input;
       }
     }
   }
 
+  &>.content { padding: .5rem 0; }
+}
 
-    .tabs-content { margin-bottom:0;
-      .content { background-color:$white;
-       form { overflow:hidden; display:block;
-        span {float:right; line-height:2.1;
+.doc-row {
+  overflow: hidden; 
+  color: $deftext; 
+  border-top: 1px solid #eee;
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  margin: 0 10px; 
+  background-color: #f9f9f9;
+  font-size: .875rem;
 
-          &.tabmenusfile {float: left; padding: 0px 10px; color:$tbblue;
-              i {margin: 0 5px;}
-          }
-        }
-        select {float:right; width:100px; margin: 0 10px 10px; @extend .blue-input;}
-        }
-      }
-&>.content {padding:.5rem 0;}
-
+  input {
+    margin-right: 5px;
   }
 
-  .doc-row {overflow:hidden; color:$deftext; border-top: 1px solid #eee;padding-top:10px; padding-bottom:10px; margin: 0 10px; background-color:#f9f9f9;
-         font-size: .875rem;
-         input {margin-right:5px;}
-            a {color:red; font-size:1.2rem; margin: 0 3px;}
-            &:last-child {border-bottom:1px solid #eee;}   
+  a {
+    color: red; 
+    font-size: 1.2rem; 
+    margin: 0 3px;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #eee;
+  }   
 } 
 
-.pagination-centered {background:white;
+.pagination-centered {
+  background: white;
 
-  ul.pagination { padding-bottom: 10px;
-  li {margin:0;
-    a {padding: 0.0525rem 0.525rem; color:$tbblue; font-size:.8rem;}
-    &.current {a {background:$tbblue;font-size:.8rem; color:$white;}}
-  }
-}
+  ul.pagination { 
+    padding-bottom: 10px;
 
-}
+    li {
+      margin:0;
 
- .unfiled {text-align: center; overflow:hidden; color:$deftext; padding-top:10px; padding-bottom:10px;
-      span {display: block; }
-      ul { li {border:1px solid #eee; width: 46%;
-margin: 5px 2%;
-float: left;
-padding: 10px 0 0;
-&>img {max-width: 40%;}
-
-.unfiledname {font-size: .6rem;}
-.unfiled-attach {text-align:left; background:#eeeeee; padding:5px;
-a {float:right; color:$redbg; margin: 0 5px;}
-input {margin:0;}
-
-}
-
-          } 
-            
-
-
-        }
- }
-
- .showing {background: #fff;
-margin: 0;
-padding: 10px;}
-
-
-.bcase-login {background: rgba(0,0,0,.75); position: fixed; height:100%; width:100%; z-index:9999; top:0;
-  &.profile-cat {.login-body 
-    { text-align:center; 
-    p {margin-bottom:0 !important;}
-    }
-  }
-}
-
-.login-wrap { width: 250px; margin: 50px auto; background: $white; @include border-radius(5px); min-height:100px; overflow:hidden;
-  &.pprofile {margin-top:20px;max-height: 86%; position:relative; height: 100%;
-    .login-body {overflow-y: scroll;
-position: absolute;
-max-height: 86%;
-        header {font-weight:bold; color:$tbblue;}
-        p {text-align:left;}
-    }
-
-  }
-  .headerwrap { background:$tbblue;padding: 7px 10px; font-family:$font-family-header;
-    header {display:inline-block; color:$white; }
-                i {float:right; color:$white;}
+      a {
+        padding: 0.0525rem 0.525rem; 
+        color: $tbblue; 
+        font-size: .8rem;
       }
 
-       .login-body {padding: 10px 20px;
-        form {text-align:center; margin-bottom:10px;}
-           p {margin-bottom:1.25rem; margin-top:.5rem; text-align:center;
-            &.forgotpin {font-size:.75rem;}
-            &.input-item {margin:0; input { margin-bottom:0;}}
+      &.current {
+        a {
+          background: $tbblue;
+          font-size:.8rem; 
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.unfiled {
+  text-align: center; 
+  overflow: hidden; 
+  color: $deftext; 
+  padding-top: 10px; 
+  padding-bottom: 10px;
+
+  span {
+    display: block; 
+  }
+
+  ul { 
+    li {
+      border: 1px solid #eee; 
+      width: 46%;
+      margin: 5px 2%;
+      float: left;
+      padding: 10px 0 0;
+
+      &>img {
+        max-width: 40%;
+      }
+
+      .unfiledname {
+        font-size: .6rem;
+      }
+
+      .unfiled-attach {
+        text-align: left; 
+        background: #eeeeee; 
+        padding: 5px;
+
+        a {
+          float: right; 
+          color: $redbg; 
+          margin: 0 5px;
+        }
+        input { margin:0; }
+      }
+    } 
+  }
+}
+
+.showing {
+  background: #fff;
+  margin: 0;
+  padding: 10px;
+}
+
+.bcase-login {
+  background: rgba(0,0,0,.75); 
+  position: fixed; 
+  height: 100%; 
+  width: 100%; 
+  z-index: 9999; 
+  top: 0;
+
+  &.profile-cat {
+    .login-body { 
+      text-align: center; 
+
+      p {
+        margin-bottom:0 !important;
+      }
+    }
+  }
+}
+
+.login-wrap { 
+  width: 250px; 
+  margin: 50px auto; 
+  background: $white; 
+  min-height: 100px; 
+  overflow: hidden;
+  @include border-radius(5px); 
+
+    &.pprofile {
+      margin-top: 20px;
+      max-height: 86%; 
+      position: relative; 
+      height: 100%;
+
+      .login-body {
+        overflow-y: scroll;
+        position: absolute;
+        max-height: 86%;
+
+        header {
+          font-weight: bold; 
+          color: $tbblue;
+        }
+
+        p { text-align:left; }
+      }
+    }
+
+    .headerwrap { 
+      background: $tbblue;
+      padding: 7px 10px; 
+      font-family: $font-family-header;
+
+      header {
+        display: inline-block; 
+        color: $white; 
+      }
+
+      i {
+        float: right; 
+        color: $white;
+      }
+    }
+
+    .login-body {
+      padding: 10px 20px;
+
+      form {
+        text-align: center; 
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-bottom: 1.25rem; 
+        margin-top: .5rem; 
+        text-align: center;
+
+        &.forgotpin {
+          font-size: .75rem;
+        }
+
+        &.input-item {
+          margin: 0; 
+          input { margin-bottom:0; }
+        }
+      }
+    }
+
+    &.addfolder { 
+      .login-body {
+        p {
+          margin-bottom: 5px; 
+          text-align: left;
+
+          &.input-item {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+  &.uploadfile { 
+    .login-body {
+      p {
+        margin-bottom: 5px; 
+        text-align: left;
+
+        span { font-size:.75rem; }
+
+        &.input-item {
+          margin-bottom: 20px;
+
+          input[type="file"] {
+            background: none;
           }
 
-       }  
-  &.addfolder { 
-    .login-body {p {margin-bottom:5px; text-align:left;
-                    &.input-item {margin-bottom:20px;}
+          select {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }
-  &.uploadfile { 
-    .login-body {p {margin-bottom:5px; text-align:left;
-                      span {font-size:.75rem;}
-                    &.input-item {margin-bottom:20px;
-                      input[type="file"] {background:none;}
-                      select {margin-bottom:0;}
-                    }
-      }
-    }
+
+  &.pprofile {
+    max-width: 80%; 
+    width: 100%;
   }
-    &.pprofile {max-width:80%; width: 100%;}
 }
 
-.upload-btn {background: transparent; color:$normalbutton; font-size: 2.125rem;
+.upload-btn {
+  background: transparent; 
+  color: $normalbutton; 
+  font-size: 2.125rem;
   position: absolute;
-top: -5px;
-right: 0;
-margin: 0;
-padding: 0;
- &:hover {background:transparent;color:$normalbutton;}
- }
+  top: -5px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    background: transparent;
+    color: $normalbutton;
+  }
+}
 

@@ -7287,14 +7287,14 @@ ul.off-canvas-list li a {
   font-size: 0.5rem;
   display: inline-block;
   background: #2eb727 none repeat scroll 0% 0%;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  border-radius: 100px;
   width: 12px;
   height: 12px;
   line-height: 12px;
-  text-align: center; }
+  text-align: center;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px; }
   .attn.green i {
     color: #FFFFFF !important;
     vertical-align: super; }
@@ -7305,11 +7305,11 @@ ul.off-canvas-list li a {
   background: #1b619c;
   color: #FFFFFF;
   padding: 2px 5px 2px 1px;
+  font-size: 0.75rem;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
-  border-radius: 3px;
-  font-size: 0.75rem; }
+  border-radius: 3px; }
   .addbtn:hover {
     color: #FFFFFF; }
 
@@ -7323,44 +7323,44 @@ ul.off-canvas-list li a {
 
 .cta-btn {
   background: #15b948;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
   color: #FFFFFF;
   border: 0;
   padding: 7px 15px;
   min-width: 75px;
   font-size: .875rem;
-  margin: 0 3px; }
+  margin: 0 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
   .cta-btn:hover {
     background: #15b948; }
 
 .cancel-btn {
   background: #92accd;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
   color: #FFFFFF;
   padding: 7px 15px;
   min-width: 75px;
   font-size: .875rem;
-  margin: 0 3px; }
+  margin: 0 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
   .cancel-btn:hover {
     background: #92accd; }
 
 .normal-btn {
   background: #1B619C;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
   color: #FFFFFF;
   padding: 7px 15px;
   min-width: 75px;
   font-size: .875rem;
-  margin: 0 3px; }
+  margin: 0 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
   .normal-btn:hover {
     background: #1B619C; }
 
@@ -7515,16 +7515,16 @@ ul.off-canvas-list li a {
           height: .9rem;
           width: .9rem;
           border: 1px solid white;
-          -webkit-border-radius: 100%;
-          -moz-border-radius: 100%;
-          -ms-border-radius: 100%;
-          border-radius: 100%;
           background: #F00;
           position: absolute;
           right: 1px;
           top: 2px;
           display: block;
-          padding: 0; }
+          padding: 0;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          border-radius: 100%; }
           .tab-bar ul.notif-icons.right li a .attn .icon-attention-alt {
             color: #FFFFFF;
             font-size: 0.57rem;
@@ -7723,11 +7723,11 @@ ul.off-canvas-list li a {
       color: #15B948;
       font-size: 9px;
       background: #FFFFFF;
+      padding: 0 3px;
       -webkit-border-radius: 100px;
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
-      border-radius: 100px;
-      padding: 0 3px; }
+      border-radius: 100px; }
   .checks.red {
     background-color: #f33c3e; }
     .checks.red header {
@@ -7738,11 +7738,11 @@ ul.off-canvas-list li a {
       color: #f33c3e;
       font-size: 9px;
       background: #FFFFFF;
+      padding: 0 3px;
       -webkit-border-radius: 100px;
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
-      border-radius: 100px;
-      padding: 0 3px; }
+      border-radius: 100px; }
   .checks.blue {
     background-color: #2873c6; }
     .checks.blue header {
@@ -7887,7 +7887,7 @@ ul.off-canvas-list li a {
   background: #3f638c; }
 
 .calendar .date-picker .week .day.weekend {
-  color: #Fff;
+  color: #fff;
   background: #38587c;
   border-color: #38587c; }
 
@@ -7939,15 +7939,15 @@ ul.off-canvas-list li a {
       color: #FFFFFF; }
       .menubtn ul li a span {
         background: #1b619c;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        border-radius: 3px;
         display: block;
         width: 1.625rem;
         height: 1.625rem;
         text-align: center;
-        line-height: 1.625rem; }
+        line-height: 1.625rem;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        border-radius: 3px; }
 
 .srchform {
   background: #267BCB;
@@ -8004,15 +8004,15 @@ ul.off-canvas-list li a {
   float: right;
   background: #1b619c;
   color: #FFFFFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
   margin-top: 10px;
   padding: 0;
   margin-bottom: 0;
   height: 2.125rem;
-  line-height: 2.125rem; }
+  line-height: 2.125rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
   .srchbtn:hover, .srch-input .sbtn:hover {
     background: #1b619c; }
 
@@ -8043,13 +8043,13 @@ ul.off-canvas-list li a {
       display: none; }
       .transaction-row .transactions div.details-wrap .whitebg {
         background: #FFFFFF;
+        overflow: hidden;
+        font-size: 0.875rem;
+        margin-bottom: 10px;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
-        border-radius: 5px;
-        overflow: hidden;
-        font-size: 0.875rem;
-        margin-bottom: 10px; }
+        border-radius: 5px; }
         .transaction-row .transactions div.details-wrap .whitebg div {
           padding: 5px 0; }
           .transaction-row .transactions div.details-wrap .whitebg div span {
@@ -8124,11 +8124,11 @@ ul.off-canvas-list li a {
   font-size: .875rem;
   color: #5f748d;
   padding: 5px 0px 5px 10px;
+  border: 1px solid #809bbd;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #809bbd; }
+  border-radius: 3px; }
   .approve-btn input {
     margin-bottom: 0; }
 
@@ -8444,12 +8444,12 @@ svg.pportal {
   width: 250px;
   margin: 50px auto;
   background: #FFFFFF;
+  min-height: 100px;
+  overflow: hidden;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  border-radius: 5px;
-  min-height: 100px;
-  overflow: hidden; }
+  border-radius: 5px; }
   .login-wrap.pprofile {
     margin-top: 20px;
     max-height: 86%;
