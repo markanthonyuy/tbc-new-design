@@ -1,0 +1,59 @@
+@media #{$medium-up} { 
+  .content-wrap {
+    width: 80%;
+    margin-left: 18%;
+  }
+
+  .nav-wrap {
+    width: 20%;
+
+    ul {
+      li {
+        .dropit2 {
+          display: none;
+          position: static;
+          width: auto;
+          margin-top: 10px;
+        }
+
+        a {
+          margin-left: 5px;
+          text-align: left;
+            .sidenav-text {
+              display: inline-block !important;
+            }
+        }
+      }
+    }
+  }
+}
+
+@media #{$large-only} {
+
+  .content-wrap-header {
+    width: 100%;
+  }
+
+  .content-wrap-body-header {
+    width: 100%;
+  }
+
+  .content-wrap-body-container {
+    width: 100%;
+  }
+
+  .help-content-wrap-body-container {
+    width: 100%;
+  }
+}
+
+@media #{$small-only} {
+
+  .content-wrap-body {
+    margin: 0;
+  }
+  
+  .form-990, .services-budget-screenshot {
+    text-align: center !important;
+  }
+}
