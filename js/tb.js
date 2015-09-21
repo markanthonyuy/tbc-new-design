@@ -18,7 +18,7 @@ $( ".notif-icons li.bcloud" ).click(function() {
 
 
 
-$(".sidenav li.listicon").click(function() {
+/*$(".sidenav li.listicon").click(function() {
   $('.xcase,.xcloud,.xchart, .ycase, .ychart, .yusers, .ysettings').hide();
   $(this).children( ".dropit2" ).toggle();
   
@@ -50,7 +50,7 @@ $(".sidenav li.fausers").click(function() {
   $('.xcase,.xcloud,.xchart, .ychart, .ylist, .ycase, .ysettings').hide();
   $(this).children( ".dropit2" ).toggle();
   
-});
+});*/
 
 $(".pchart a").click(function() {
   $(".az-btn span, .srch-btn span").removeClass("bluehover");
@@ -373,8 +373,8 @@ $(document).ready(function() {
   //  $('.container').not($(this).next()).slideToggle();
 //});
 
-$(document).click(function(event) {
-    if(!$(event.target).closest('.notif-icons li, .dropit, .sidenav li, .dropit2').length) {
+/*$(document).click(function(event) {
+    if(!$(event.target).closest('.notif-icons li, .dropit').length) {
      //$('.notif-icons li').show();
      $(".pchart a").removeClass("ahover");
      $(".bcase a").removeClass("ahover");
@@ -384,7 +384,7 @@ $(document).click(function(event) {
             
         }
     }       
-});
+});*/
 
 
 
@@ -429,3 +429,8 @@ $(".tips").toggle();
 
 
 
+/* MARK */
+
+$('.sidenav > li').on('click', function() {
+  $(this).find('.dropit2').toggle();
+});
