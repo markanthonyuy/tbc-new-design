@@ -430,7 +430,10 @@ $(".tips").toggle();
 
 
 /* MARK */
-
-$('.sidenav > li').on('click', function() {
-  $(this).find('.dropit2').toggle();
+$('ul.sidenav > li').on('click', function() {
+  var _this = $(this);
+  _this.find('.dropit2').addClass('active');
+  $('.dropit2:not(.active)').hide();
+  _this.find('.dropit2').toggle();
+  $('.dropit2').removeClass('active');
 });
