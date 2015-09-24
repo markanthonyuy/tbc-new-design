@@ -28,7 +28,7 @@
   }
 }
 
-@media #{$large-only} {
+@media #{$large-up} {
 
   .content-wrap-header {
     width: 100%;
@@ -44,6 +44,10 @@
 
   .help-content-wrap-body-container {
     width: 100%;
+  }
+
+  .reconciliation-table-small {
+    width: 49% !important;
   }
 }
 
