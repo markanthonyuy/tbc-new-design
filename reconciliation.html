@@ -1,0 +1,318 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treasurer's Briefcase | Admin</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/fontello-tb/css/tb.css" />
+    <!-- <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" /> -->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="bower_components/foundation-datepicker-master/css/foundation-datepicker.min.css">
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+
+  <div class="page-wrap"> <!-- start page-wrap -->
+    <div class="off-canvas-wrap" data-offcanvas> <!-- start off-canvas-wrap -->
+      <div class="inner-wrap"> <!-- start inner-wrap -->
+        <nav class="tab-bar">
+          <h1 class="tb-logo"><a href="index.html"><img src="img/tbc-logo.jpg" class="hide-for-small" alt="Treasurer's Briefcase Logo"><img src="img/tbc-icon.jpg" alt="Treasurer's Briefcase Logo" class="hide-for-medium-up"></a></h1>
+          <ul class="notif-icons right">
+            <li class="pchart">
+              <a href="#" class="notif-btn"><span><i class="icon-chart-pie"></i></span><span class="attn hide"><i class="icon-attention-alt"></i></span></a>
+              <ul class="dropit xchart">
+                <li class="arrwup"><span class="arrow-up"></span></li>
+                <li class="headin"><a href="#">Reports</a></li>
+                <li><a href="#">User's subscription is about to expire</a></li>
+                <li><a href="#">Duis aute irure dolor in reprehenderit</a></li>
+                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+              </ul>
+            </li>
+            <li class="bcase">
+              <a href="#" class="notif-btn"><span><i class="icon-briefcase"></i></span><span class="attn hide"><i class="icon-attention-alt"></i></span></a>
+              <ul class="dropit xcase">
+                <li class="arrwup"><span class="arrow-up"></span></li>
+                <li class="headin"><a href="#">Notifications Briefcase</a></li>
+                <li><a href="#">Sed do eiusmod tempor</a></li>
+                <li><a href="#">Quis nostrud exercitation</a></li>
+              </ul>
+            </li>
+            <li class="bcloud">
+              <a href="#" class="notif-btn"><span><i class="icon-cloud"></i></span><span class="attn"><i class="icon-attention-alt"></i></span></a>
+              <ul class="dropit xcloud">
+                <li class="arrwup"><span class="arrow-up"></span></li>
+                <li class="headin"><a href="#">Treasurer's Briefcase</a></li>
+                <li><a href="#">Sunt in culpa qui officia</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <section class="right-small hide-for-large-up">
+            <a class="right-off-canvas-toggle" href="#"><span><i class="icon-user"></i></span></a>
+          </section>
+        </nav>
+        <aside class="right-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>CVTHEORY_TEST_PTO</label></li>
+            <li><a href="#">cvtheory_test_pto@treasurersbriefcase.com</a></li>
+            <li><a href="#">Administrator</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </aside>
+        
+        <aside class="nav-wrap"> <!-- start nav-wrap -->
+          <div class="row">
+            <ul class="sidenav">
+              <li><a href="index.html"><i class="icon-gauge"></i> <span class="sidenav-text">Dashboard</span></a></li>
+              <li class="active listicon"><a href="#"><i class="icon-list-alt"></i> <span class="sidenav-text">Checking</span></a>
+                <ul class="dropit2 ylist">
+                  <li><span class="arrow-right"></span><a href="transaction.html">New Transactions</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Transactions</a></li>
+                  <li class="active"><span class="arrow-right"></span><a href="#">Reconciliation</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Transfer Funds</a></li>
+                  <li><span class="arrow-right"></span><a href="approval.html">Approval</a></li>
+                </ul>
+              </li>
+              <li class="piechart"><a href="#"><i class="icon-chart-pie"></i> <span class="sidenav-text">Reports</span></a>
+                <ul class="dropit2 ychart">
+                  <li><span class="arrow-right"></span><a href="reports.html">Activity</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Budget</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Budget Variance</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Category Listing</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Category Details</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Contact</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Executive Board</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Fund Raising</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Website Payment</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Reconciliation</a></li>
+                  <li><span class="arrow-right"></span><a href="#">1099 Vendor</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Treasurer's</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Custom Report</a></li>
+                </ul>
+              </li>
+              <li class="briefc"><a href="briefcase.html"><i class="icon-briefcase"></i> <span class="sidenav-text">Briefcase</span></a>
+              </li>
+              <li class="fausers"><a href="#"><i class="icon-users"></i> <span class="sidenav-text">Contact</span></a>
+                <ul class="dropit2 yusers">
+                  <li><span class="arrow-right"></span><a href="contact.html">All Contact</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Member</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Officer</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Vendor</a></li>
+                </ul>
+              </li>
+              <li class="tbsettings"><a href="#"><i class="icon-cog"></i> <span class="sidenav-text">Settings</span></a>
+                <ul class="dropit2 ysettings">
+                  <li><span class="arrow-right"></span><a href="payment-profiles.html">Organization</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Categories</a></li>
+                  <li><span class="arrow-right"></span><a href="#">Payment Profile</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </aside> <!-- start nav-wrap -->
+
+        <div class="content-wrap"> <!-- start content wrap -->
+          <header class="content-wrap-header">
+            <h5>Reconciliation</h5>
+          </header>
+
+          <div class="content-wrap-body"> <!-- start content-wrap-body -->
+            <header class="content-wrap-body-header">
+              <select class="reconciliation-header-account">
+                <option>CVTHEORY TEST 1</option>
+                <option>CVTHEORY TEST 2</option>
+              </select>
+              <span class="reconciliation-header-balance">$500.00</span>
+            </header>
+
+            <div class="reconciliation-main-content"> <!-- start reconciliation-main-content -->
+              <div class="reconciliation-main-content-header"> <!-- start reconciliation-main-content-header -->
+                <div class="row">
+                  <div class="large-3 columns">
+                    <p>Opening Bank Balance:</p>
+                    <p><b>$ 1,000.00</b></p>
+                  </div>
+                  <div class="large-3 columns">
+                    <p>Deposit (Ins):</p>
+                    <p><b>$ 100.00</b></p>
+                    <p>Cleared (Selected):</p>
+                    <p><b>$ 0.00</b></p>
+                    <p>Difference:</p>
+                    <p><b>$ 100.00</b></p>
+                  </div>
+                  <div class="large-3 columns">
+                    <p>Withdrawals (Outs):</p>
+                    <p><b>$ 100.00</b></p>
+                    <p>Cleared (Selected):</p>
+                    <p><b>$ 100.00</b></p>
+                    <p>Difference:</p>
+                    <p><b>$ 0.00</b></p>
+                  </div>
+                  <div class="large-3 columns">
+                    <p>Ending Bank Balance</p>
+                    <p><b>$ 1,000.00</b></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-6 columns">
+                    <p>Last Bank Statement Date: 10/07/2015</p>
+                  </div>
+                   <div class="large-6 columns">
+                    <p class="">Current Bank Statement Date: 11/07/2015</p>
+                  </div>
+                </div>
+              </div> <!-- end reconciliation-main-content-header -->
+
+              <div class="reconciliation-main-content-body"> <!-- start reconciliation-main-content-body -->
+                <div class="row"> <!-- start row -->
+                  <div class="medium-12 large-6 columns reconciliation-table-small"> <!-- start reconciliation-table-small -->
+                    <div class="row header-blue">
+                      <div class="small-10 large-10 columns">
+                        <p class="reconciliation-table-small-header-text">Deposits (Ins)</p>
+                      </div>
+                      <div class="small-2 large-2 columns">
+                        <button class="addbtn reconciliation-table-small-header-button"><i class="icon-plus"></i> Add</button>
+                      </div>
+                    </div>
+                    <div class="row reconciliation-table-small-sub-header">
+                      <div class="small-6 columns">
+                        <p>Selected: 2.00 <i class="icon-ok"></i></p>
+                      </div>
+                      <div class="small-6 columns">
+                        <p class="text-right">Difference: 1.00</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <table class="large-12 columns reconciliation-table-body" cellspacing="0" cellpadding="0"> <!-- start reconciliation-table-body -->
+                        <thead>
+                          <tr>
+                            <th><input type="checkbox"></th>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">Amount</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="text-center">03/12/2015</td>
+                            <td class="text-center">2.00</td>
+                            <td class="text-right"><a href="#"><i class="icon-pencil"></i></a></td>
+                          </tr>
+                           <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="text-center">03/12/2015</td>
+                            <td class="text-center">2.00</td>
+                            <td class="text-right"><a href="#"><i class="icon-pencil"></i></a></td>
+                          </tr>
+                           <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="text-center">03/12/2015</td>
+                            <td class="text-center">2.00</td>
+                            <td class="text-right"><a href="#"><i class="icon-pencil"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table> <!-- end reconciliation-table-body -->
+                    </div>
+                  </div> <!-- end reconciliation-table-small -->
+
+                  <div class="medium-12 large-6 columns reconciliation-table-small"> <!-- start reconciliation-table-small -->
+                    <div class="row header-blue">
+                      <div class="small-10 large-10 columns">
+                        <p class="reconciliation-table-small-header-text">Withdrawals (Outs)</p>
+                      </div>
+                      <div class="small-2 large-2 columns">
+                        <button class="addbtn reconciliation-table-small-header-button"><i class="icon-plus"></i> Add</button>
+                      </div>
+                    </div>
+                    <div class="row reconciliation-table-small-sub-header">
+                      <div class="small-6 columns">
+                        <p>Selected: 2.00 <i class="icon-ok"></i></p>
+                      </div>
+                      <div class="small-6 columns">
+                        <p class="text-right">Difference: 1.00</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <table class="large-12 columns reconciliation-table-body" cellspacing="0" cellpadding="0"> <!-- start reconciliation-table-body -->
+                        <thead>
+                          <tr>
+                            <th><input type="checkbox"></th>
+                            <th class="text-center">Date</th>
+                            <th class="text-center">Amount</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="text-center">03/12/2015</td>
+                            <td class="text-center">2.00</td>
+                            <td class="text-right"><a href="#"><i class="icon-pencil"></i></a></td>
+                          </tr>
+                           <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="text-center">03/12/2015</td>
+                            <td class="text-center">2.00</td>
+                            <td class="text-right"><a href="#"><i class="icon-pencil"></i></a></td>
+                          </tr>
+                           <tr>
+                            <td><input type="checkbox"></td>
+                            <td class="text-center">03/12/2015</td>
+                            <td class="text-center">2.00</td>
+                            <td class="text-right"><a href="#"><i class="icon-pencil"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table> <!-- end reconciliation-table-body -->
+                    </div>
+                  </div> <!-- end reconciliation-table-small -->
+                </div> <!-- end row -->
+                
+                <div class="row"> <!-- start row -->
+                  <div class="large-12 columns reconciliation-table-footer"> <!-- start reconciliation-table-footer -->
+                    <p class="text-center">Bank Balance: $ 1000.00</p>
+                    <p class="text-center">Plus Outsstanding Deposits (Ins): $ 0.00</p>
+                    <p class="text-center">Less Outsstanding Checks (Outs): $ (0.00)</p>
+                    <p class="text-center">Checkbook Balance: $ 1000.00</p>
+                  </div> <!-- end reconciliation-table-footer -->
+                </div> <!-- end row -->
+                
+                <div class="row"> <!-- start row -->
+                  <div class="large-12 columns reconciliation-table-button text-center"> 
+                    <button class="cta-btn">Complete Reconciliation <i class="icon-ok-circled"></i></button>
+                    <button class="cancel-btn">Cancel</button>
+                  </div>
+                  <div class="large-12 columns text-right">
+                    <a href="#">Save for later</a>
+                  </div>
+                </div> <!-- end row -->
+              </div> <!-- end reconciliation-main-content-body -->
+            </div> <!-- end reconciliation-main-content -->
+
+          </div> <!-- end content-wrap-body -->
+
+        </div> <!-- end content wrap -->
+
+        <a class="exit-off-canvas"></a>
+        <footer>
+          © 2014–2015 Treasurers' Briefcase
+        </footer>
+      </div> <!-- end inner-wrap -->
+    </div> <!-- end off-canvas-wrap -->
+  </div> <!-- end page-wrap -->
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jqueryte/jquery-te-1.4.0.min.js" charset="utf-8"></script>
+  <script src="bower_components/foundation/js/foundation.min.js"></script>
+  <script src="bower_components/foundation-datepicker-master/js/foundation-datepicker.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/tb.js"></script>
+  <script>
+    $('.fdatepicker').fdatepicker();
+  </script>
+
+  </body>
+</html>

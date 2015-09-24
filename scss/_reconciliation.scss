@@ -1,0 +1,70 @@
+.reconciliation-header-account {
+  width: auto;
+  margin: 3px 0 0 3px;
+  padding-right: 15px;
+}
+
+.reconciliation-header-balance {
+  color: #fff;
+}
+
+.reconciliation-main-content {
+
+  background: #fff;
+
+  .reconciliation-main-content-header {
+    margin-top: 5px;
+    padding-top: 15px;
+    border: 3px solid #fff;
+    background: #D0E6FF;
+  }
+
+  .reconciliation-main-content-body {
+    border: 15px solid #fff;
+  }
+
+  .reconciliation-table-small {
+
+    .reconciliation-table-small-header-text {
+      line-height: 34px;
+      font-weight: bold;
+      margin-bottom: 0;
+      color: #fff;
+    }
+
+    .reconciliation-table-small-header-button {
+      font-weight: bold;
+      margin: 7px 0 0 0;
+      width: 60px;
+      font-size: 14px;
+    }
+
+    .reconciliation-table-small-sub-header {
+      background: #5A80AC;
+
+      p {
+        color: #fff;
+        line-height: 45px;
+        margin-bottom: 0;
+      }
+    }
+
+    .reconciliation-table-body {
+      padding: 0;
+    }
+  }
+
+  .reconciliation-table-footer {
+    background: $tbblue;
+    color: #fff;
+    padding: 10px 0 10px 0;
+    
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  .reconciliation-table-button {
+    margin-top: 20px;
+  }
+}
