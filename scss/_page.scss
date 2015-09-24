@@ -46,18 +46,6 @@ ul.off-canvas-list li a {
 }
 
 
-
-.addbtn {
-  float: right; 
-  display: block; 
-  background: $normalbutton; 
-  color: $white; 
-  padding: 2px 5px 2px 1px;
-  font-size: 0.75rem;
-  @include border-radius(3px); 
-
-  &:hover { color: $white; }
-}
 .addnew, .uploadfiles, .deletefile, .filefile, .dldl, .payment-profile, .profile-cat {
   display:none;
 }
