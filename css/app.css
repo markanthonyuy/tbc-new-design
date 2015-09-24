@@ -7296,20 +7296,6 @@ ul.off-canvas-list li a {
     color: #FFFFFF !important;
     vertical-align: super; }
 
-.addbtn {
-  float: right;
-  display: block;
-  background: #1b619c;
-  color: #FFFFFF;
-  padding: 2px 5px 2px 1px;
-  font-size: 0.75rem;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px; }
-  .addbtn:hover {
-    color: #FFFFFF; }
-
 .addnew, .uploadfiles, .deletefile, .filefile, .dldl, .payment-profile, .profile-cat {
   display: none; }
 
@@ -8877,6 +8863,67 @@ footer {
   border-radius: 3px;
   padding: 7px; }
 
+.reconciliation-header-account {
+  width: auto;
+  margin: 3px 0 0 3px;
+  padding-right: 15px; }
+
+.reconciliation-header-balance {
+  color: #fff; }
+
+.reconciliation-main-content {
+  background: #fff; }
+  .reconciliation-main-content .reconciliation-main-content-header {
+    margin-top: 5px;
+    padding-top: 15px;
+    border: 3px solid #fff;
+    background: #D0E6FF; }
+  .reconciliation-main-content .reconciliation-main-content-body {
+    border: 15px solid #fff; }
+  .reconciliation-main-content .reconciliation-table-small .reconciliation-table-small-header-text {
+    line-height: 34px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #fff; }
+  .reconciliation-main-content .reconciliation-table-small .reconciliation-table-small-header-button {
+    font-weight: bold;
+    margin: 7px 0 0 0;
+    width: 60px;
+    font-size: 14px; }
+  .reconciliation-main-content .reconciliation-table-small .reconciliation-table-small-sub-header {
+    background: #5A80AC; }
+    .reconciliation-main-content .reconciliation-table-small .reconciliation-table-small-sub-header p {
+      color: #fff;
+      line-height: 45px;
+      margin-bottom: 0; }
+  .reconciliation-main-content .reconciliation-table-small .reconciliation-table-body {
+    padding: 0; }
+  .reconciliation-main-content .reconciliation-table-footer {
+    background: #267BCB;
+    color: #fff;
+    padding: 10px 0 10px 0; }
+    .reconciliation-main-content .reconciliation-table-footer p {
+      margin-bottom: 5px; }
+  .reconciliation-main-content .reconciliation-table-button {
+    margin-top: 20px; }
+
+.addbtn {
+  float: right;
+  display: block;
+  background: #1b619c;
+  color: #FFFFFF;
+  padding: 2px 5px 2px 1px;
+  font-size: 0.75rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
+  .addbtn:hover {
+    color: #FFFFFF; }
+
+.header-blue {
+  background: #267BCB; }
+
 @media only screen and (min-width: 46.0625em) {
   .content-wrap {
     width: 80%;
@@ -8894,7 +8941,7 @@ footer {
       text-align: left; }
       .nav-wrap ul li a .sidenav-text {
         display: inline-block !important; } }
-@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+@media only screen and (min-width: 64.0625em) {
   .content-wrap-header {
     width: 100%; }
 
@@ -8905,7 +8952,10 @@ footer {
     width: 100%; }
 
   .help-content-wrap-body-container {
-    width: 100%; } }
+    width: 100%; }
+
+  .reconciliation-table-small {
+    width: 49% !important; } }
 @media only screen and (max-width: 46em) {
   .content-wrap-body {
     margin: 0; }
