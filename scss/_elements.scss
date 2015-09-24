@@ -1,0 +1,14 @@
+.addbtn {
+  float: right; 
+  display: block; 
+  background: $normalbutton; 
+  color: $white; 
+  padding: 2px 5px 2px 1px;
+  font-size: 0.75rem;
+  @include border-radius(3px); 
+  &:hover { color: $white; }
+}
+
+.header-blue {
+  background: $tbblue;
+}
