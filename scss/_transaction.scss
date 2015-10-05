@@ -267,3 +267,69 @@
     i { color: #bbb; } 
   }
 }
+
+.transaction-add {
+  margin: 12px 12px 0 0;
+}
+
+.transaction-table-header {
+
+  /* .transaction-table-header-account {
+    width: 30%;
+
+    label {
+      width: 20%;
+      display: inline;
+    }
+
+    select {
+      width: 50%;
+      display: inline;
+    }
+
+    span {
+      width: 20%;
+      background: $tbblue;
+      color: #fff;
+    }
+  } */
+}
+
+.transaction-table {
+  width: 100%;
+
+  thead {
+    background: $tbblue;
+
+    th {
+      color: #fff;
+    }
+  }
+
+  .active {
+    background: #d0e6ff;
+  }
+
+  .transaction-table-sub-table-wrap {
+    background: #d0e6ff;
+
+
+    .transaction-table-sub-table {
+      width: 90%;
+      margin: 0 auto 15px auto;
+
+      span {
+        color: #184981;
+      }
+
+      td:not(&:last-child) {
+        border-bottom: 1px solid #d0e6ff;
+      }
+    }
+
+    .transaction-table-sub-table-footer {
+      margin-left: 30px;
+    }
+
+  }
+}
