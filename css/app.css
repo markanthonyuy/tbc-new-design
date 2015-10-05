@@ -8097,6 +8097,50 @@ ul.off-canvas-list li a {
   .contactme div i {
     color: #bbb; }
 
+.transaction-add {
+  margin: 12px 12px 0 0; }
+
+.transaction-table-header {
+  /* .transaction-table-header-account {
+    width: 30%;
+
+    label {
+      width: 20%;
+      display: inline;
+    }
+
+    select {
+      width: 50%;
+      display: inline;
+    }
+
+    span {
+      width: 20%;
+      background: $tbblue;
+      color: #fff;
+    }
+  } */ }
+
+.transaction-table {
+  width: 100%; }
+  .transaction-table thead {
+    background: #267BCB; }
+    .transaction-table thead th {
+      color: #fff; }
+  .transaction-table .active {
+    background: #d0e6ff; }
+  .transaction-table .transaction-table-sub-table-wrap {
+    background: #d0e6ff; }
+    .transaction-table .transaction-table-sub-table-wrap .transaction-table-sub-table {
+      width: 90%;
+      margin: 0 auto 15px auto; }
+      .transaction-table .transaction-table-sub-table-wrap .transaction-table-sub-table span {
+        color: #184981; }
+      td:not(.transaction-table .transaction-table-sub-table-wrap .transaction-table-sub-table:last-child) {
+        border-bottom: 1px solid #d0e6ff; }
+    .transaction-table .transaction-table-sub-table-wrap .transaction-table-sub-table-footer {
+      margin-left: 30px; }
+
 .approval-box {
   margin-bottom: 15px; }
   .approval-box .transaction-row {
@@ -8294,7 +8338,7 @@ svg.pportal {
     border-bottom: 1px solid #ddd;
     padding: 5px 0; }
   .briefcases ul.tabs {
-    margin: 10px 0; }
+    margin: 0; }
     .briefcases ul.tabs li > a {
       padding: 7px 10px; }
 .briefcases .bhead {
